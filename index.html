@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần mềm kiến trúc AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* TOÀN BỘ CSS ĐẸP CỦA BẠN GIỮ NGUYÊN TẠI ĐÂY */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            color: #f8fafc;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .box {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-tool {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-tool:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(99, 102, 241, 0.5);
+        }
+
+        .footer {
+            margin-top: 18px;
+            color: #94a3b8;
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 520px) {
+            body { align-items: flex-start; padding: 20px 0 40px; min-height: auto; }
+            .box { width: calc(100% - 32px); padding: 28px 20px; margin: 0 16px; }
+            h2 { font-size: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>PHẦN MỀM LÀM ẢNH</h2>
+
+    <a href="https://ai.studio/apps/c972c768-eed1-4697-9c19-9148840660b9?fullscreenApplet=true" style="text-decoration: none;">
+        <div class="btn-tool">👉 Mở phần mềm ảnh thẻ</div>
+    </a>
+
+    <div class="footer">
+        © 2026 đã có AI hỗ trợ
+    </div>
+</div>
+
+</body>
+</html>
