@@ -71,8 +71,8 @@
         /* Features Grid */
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
             margin-bottom: 40px;
         }
 
@@ -180,6 +180,26 @@
             h1 { font-size: 1.8rem; }
             .cta-box { padding: 30px 20px; }
         }
+        /* Cho màn hình máy tính bảng (Dưới 1024px): 3 cột */
+        @media (max-width: 1024px) {
+            .features-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        /* Cho màn hình điện thoại lớn (Dưới 768px): 2 cột */
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* Cho màn hình điện thoại nhỏ (Dưới 480px): 1 cột */
+        @media (max-width: 480px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -190,7 +210,15 @@
         <h1>SHARPIX-AI</h1>
         <p class="subtitle">Phần mềm tạo ảnh tự động bằng AI trong 30 giây.</p>
     </header>
+    <div class="cta-box">
+        <a href="https://ai.studio/apps/dcdcff2d-9a7e-414a-b430-e410861c2e76" class="btn-main">
+            🚀 TRUY CẬP PHẦN MỀM NGAY
+        </a>
 
+        <div class="guarantee">
+            <span>🛡️</span> Không cần cài đặt - Sử dụng trên trình duyệt
+        </div>
+    </div>
    <div class="features-grid">
 
     <!-- Chỉnh sửa ảnh -->
@@ -271,20 +299,7 @@
 
 </div>
 
-    <div class="cta-box">
-        <div class="price-tag">
-            <span class="new-price"></span>
-        </div>
-
-        <a href="https://ai.studio/apps/dcdcff2d-9a7e-414a-b430-e410861c2e76" class="btn-main">
-            🚀 TRUY CẬP PHẦN MỀM NGAY
-        </a>
-
-        <div class="guarantee">
-            <span>🛡️</span> Không cần cài đặt - Sử dụng trên trình duyệt
-        </div>
-    </div>
-
+    
     <footer class="footer">
         <p>© 2026 Sharpix-AI. Phát triển bởi đội ngũ công nghệ hình ảnh.</p>
         <p style="margin-top: 10px; font-size: 0.75rem;">Hỗ trợ kỹ thuật: support@sharpix.ai</p>
