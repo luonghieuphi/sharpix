@@ -1,7 +1,7 @@
 const products = [
     {
         id: 'image-ai',
-        title: 'SharPix Image AI',
+        title: 'Render Kiến Trúc',
         subtitle: 'Render ảnh kiến trúc 3D siêu thực với trí tuệ nhân tạo.',
         icon: '🏠',
         version: 'v1.0.0',
@@ -19,7 +19,7 @@ const products = [
     },
     {
         id: 'video-ai',
-        title: 'SharPix Video AI',
+        title: 'Video AI Kiến Trúc',
         subtitle: 'Tạo video diễn họa kiến trúc từ ảnh chụp hoặc bản vẽ.',
         icon: '🎬',
         version: 'v1.0.0',
@@ -37,7 +37,7 @@ const products = [
     },
     {
         id: 'restore-ai',
-        title: 'SharPix Restore AI',
+        title: 'Phục Chế Ảnh',
         subtitle: 'Phục chế và nâng cấp chất lượng ảnh kiến trúc cũ, mờ.',
         icon: '✨',
         version: 'v1.0.0',
@@ -67,7 +67,6 @@ function init() {
             <div class="card-icon">${product.icon}</div>
             <div class="card-info">
                 <h4>${product.title}</h4>
-                <p>AI Architecture</p>
             </div>
             <div class="card-version">${product.version}</div>
         `;
@@ -108,7 +107,7 @@ function selectProduct(product, cardElement) {
     document.getElementById('ver').textContent = product.version;
     document.getElementById('updated').textContent = product.updated;
     document.getElementById('size').textContent = product.size;
-    
+
     const ctaBtn = document.querySelector('.cta-button');
     if (ctaBtn && product.downloadLink) {
         ctaBtn.href = product.downloadLink;
@@ -135,11 +134,11 @@ function selectProduct(product, cardElement) {
 function changeMockup(src, thumbElement) {
     const mainMockup = document.getElementById('mainMockup');
     mainMockup.style.opacity = '0';
-    
+
     setTimeout(() => {
         mainMockup.src = src;
         mainMockup.style.opacity = '1';
-        
+
         document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
         thumbElement.classList.add('active');
     }, 300);
