@@ -7,14 +7,14 @@ const products = [
         version: 'v1.0.0',
         updated: 'May 2026',
         size: '134 KB',
-        mockup: 'assets/sharpix_mockup.png',
+        mockup: 'assets/sharpix_image_mockup.png',
         features: [
             { icon: '🏠', label: 'Render Ngoại Thất' },
             { icon: '🛋️', label: 'Render Nội Thất' },
             { icon: '🏗️', label: 'Quy Hoạch' },
             { icon: '📷', label: 'Góc Camera' }
         ],
-        screenshots: ['assets/sharpix_mockup.png'],
+        screenshots: ['assets/sharpix_image_mockup.png'],
         downloadLink: 'downloads/tool_anh_kientruc.rar'
     },
     {
@@ -25,14 +25,14 @@ const products = [
         version: 'v1.0.0',
         updated: 'May 2026',
         size: '159 KB',
-        mockup: 'assets/sharpix_mockup.png',
+        mockup: 'assets/sharpix_video_mockup.png',
         features: [
             { icon: '🎥', label: 'Video Cinematic' },
             { icon: '🌪️', label: 'Hiệu Ứng Động' },
             { icon: '🎵', label: 'Chèn Nhạc AI' },
             { icon: '✨', label: 'Chất Lượng 4K' }
         ],
-        screenshots: ['assets/sharpix_mockup.png'],
+        screenshots: ['assets/sharpix_video_mockup.png'],
         downloadLink: 'downloads/tool_video_kientruc.rar'
     },
     {
@@ -43,14 +43,14 @@ const products = [
         version: 'v1.0.0',
         updated: 'May 2026',
         size: '149 KB',
-        mockup: 'assets/sharpix_mockup.png',
+        mockup: 'assets/sharpix_restore_mockup.png',
         features: [
             { icon: '🖼️', label: 'Nâng Cấp Độ Phân Giải' },
             { icon: '🎨', label: 'Khử Nhiễu Ảnh' },
             { icon: '🌈', label: 'Phục Hồi Màu Sắc' },
             { icon: '📐', label: 'Làm Nét Chi Tiết' }
         ],
-        screenshots: ['assets/sharpix_mockup.png'],
+        screenshots: ['assets/sharpix_restore_mockup.png'],
         downloadLink: 'downloads/phucche.rar'
     }
 ];
