@@ -1,54 +1,57 @@
 const products = [
     {
-        id: 'nova',
-        title: 'Nova AI Assistant',
-        subtitle: 'AI-powered browser productivity toolkit.',
-        icon: '🧠',
-        version: 'v2.1.0',
+        id: 'image-ai',
+        title: 'SharPix Image AI',
+        subtitle: 'Render ảnh kiến trúc 3D siêu thực với trí tuệ nhân tạo.',
+        icon: '🏠',
+        version: 'v1.0.0',
         updated: 'May 2026',
-        size: '4.2MB',
-        mockup: 'assets/nova_ai_mockup.png',
+        size: '134 KB',
+        mockup: 'assets/sharpix_mockup.png',
         features: [
-            { icon: '⚡', label: 'Fast' },
-            { icon: '🔒', label: 'Secure' },
-            { icon: '🧠', label: 'AI Powered' },
-            { icon: '☁', label: 'Cloud Sync' }
+            { icon: '🏠', label: 'Render Ngoại Thất' },
+            { icon: '🛋️', label: 'Render Nội Thất' },
+            { icon: '🏗️', label: 'Quy Hoạch' },
+            { icon: '📷', label: 'Góc Camera' }
         ],
-        screenshots: ['assets/nova_ai_mockup.png', 'assets/nova_ai_mockup.png', 'assets/nova_ai_mockup.png']
+        screenshots: ['assets/sharpix_mockup.png'],
+        downloadLink: 'downloads/tool_anh_kientruc.rar'
     },
     {
-        id: 'productivity',
-        title: 'Productivity Tool',
-        subtitle: 'Organize your workflow with smart tabs and focus mode.',
-        icon: '🚀',
-        version: 'v1.5.2',
-        updated: 'April 2026',
-        size: '2.8MB',
-        mockup: 'assets/nova_ai_mockup.png', // Reusing for demo, ideally different
+        id: 'video-ai',
+        title: 'SharPix Video AI',
+        subtitle: 'Tạo video diễn họa kiến trúc từ ảnh chụp hoặc bản vẽ.',
+        icon: '🎬',
+        version: 'v1.0.0',
+        updated: 'May 2026',
+        size: '159 KB',
+        mockup: 'assets/sharpix_mockup.png',
         features: [
-            { icon: '📁', label: 'Tab Manager' },
-            { icon: '⏱', label: 'Focus Timer' },
-            { icon: '📊', label: 'Stats' },
-            { icon: '🛠', label: 'Customizable' }
+            { icon: '🎥', label: 'Video Cinematic' },
+            { icon: '🌪️', label: 'Hiệu Ứng Động' },
+            { icon: '🎵', label: 'Chèn Nhạc AI' },
+            { icon: '✨', label: 'Chất Lượng 4K' }
         ],
-        screenshots: ['assets/nova_ai_mockup.png', 'assets/nova_ai_mockup.png']
+        screenshots: ['assets/sharpix_mockup.png'],
+        downloadLink: 'downloads/tool_video_kientruc.rar'
     },
     {
-        id: 'security',
-        title: 'SafeGuard Pro',
-        subtitle: 'Ultimate privacy and security extension.',
-        icon: '🛡',
-        version: 'v3.0.1',
+        id: 'restore-ai',
+        title: 'SharPix Restore AI',
+        subtitle: 'Phục chế và nâng cấp chất lượng ảnh kiến trúc cũ, mờ.',
+        icon: '✨',
+        version: 'v1.0.0',
         updated: 'May 2026',
-        size: '5.1MB',
-        mockup: 'assets/nova_ai_mockup.png',
+        size: '149 KB',
+        mockup: 'assets/sharpix_mockup.png',
         features: [
-            { icon: '🕵️', label: 'Anti-Tracker' },
-            { icon: '🔐', label: 'Encryption' },
-            { icon: '🚫', label: 'Ad-Blocker' },
-            { icon: '📡', label: 'VPN Ready' }
+            { icon: '🖼️', label: 'Nâng Cấp Độ Phân Giải' },
+            { icon: '🎨', label: 'Khử Nhiễu Ảnh' },
+            { icon: '🌈', label: 'Phục Hồi Màu Sắc' },
+            { icon: '📐', label: 'Làm Nét Chi Tiết' }
         ],
-        screenshots: ['assets/nova_ai_mockup.png']
+        screenshots: ['assets/sharpix_mockup.png'],
+        downloadLink: 'downloads/phucche.rar'
     }
 ];
 
@@ -64,7 +67,7 @@ function init() {
             <div class="card-icon">${product.icon}</div>
             <div class="card-info">
                 <h4>${product.title}</h4>
-                <p>${product.id === 'nova' ? 'AI Productivity' : 'Utility'}</p>
+                <p>AI Architecture</p>
             </div>
             <div class="card-version">${product.version}</div>
         `;
@@ -105,6 +108,11 @@ function selectProduct(product, cardElement) {
     document.getElementById('ver').textContent = product.version;
     document.getElementById('updated').textContent = product.updated;
     document.getElementById('size').textContent = product.size;
+    
+    const ctaBtn = document.querySelector('.cta-button');
+    if (ctaBtn && product.downloadLink) {
+        ctaBtn.href = product.downloadLink;
+    }
 
     // Update features
     const featuresGrid = document.querySelector('.features-grid');
